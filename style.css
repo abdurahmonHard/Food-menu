@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Open+Sans&family=Paytone+One&family=Poppins:wght@300&family=Space+Grotesk&display=swap');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #222;
+    color: #fff;
+    
+}
+
+.food-img{
+    width: 95%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid red;
+    border: none;
+}
+
+.food-img img {
+    width: 100%;
+    transition: transform 1000ms;
+}
+
+.image:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.wp-block-sidebar,
+.image:hover{
+    cursor: zoom-in;
+}
+
+.image{
+    transform-origin: center;
+    transform: scale(1, 1);
+    outline: transparent solid 1.
+} 
+
+.menu{
+    margin: 2rem 0;
+}
+
+.menu-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin: 0 1rem;
+}
+
+img{
+    width: 93%;
+    display: block;
+}
+
+.menu-head{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-head h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6rem;
+}
+
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+
+}
+
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+
+.menu-btn:hover::after{
+    width: 100%;
+}
+
+.menu-btn:hover{
+    opacity: 0.8;
+}
+
+.active-btn{
+    color: #fff;
+
+}
+
+.food-items{
+    margin: 2rem 0;
+}
+
+.food-item{
+    width: 90%;
+    margin-left: 2rem !important;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    margin: 1rem 6rem 0;
+    box-shadow: 0 0 16px -4px   rgba(0, 0, 0, 0.75);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.food-img img{
+    border-radius: 4px;
+}
+
+.food-content{
+    padding: 1rem;
+}
+
+.food-name{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff9505;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.line{
+    width: 27%;
+    height: 3px;
+    background: #ff9505;
+}
+
+.food-price{
+    padding: 0.7rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.rating{
+    display: flex;
+    list-style: none;
+}
+
+.rating{
+    list-style: none;
+    outline: none;
+
+}
+
+.rating.fa-star{
+    margin-right: 0.4rem;
+    color: #44355b;
+}
+
+.category{
+    padding-top: 0.4rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 50% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 0rem;
+    }
+
+    .food-content{
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 90%;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0rem;
+    }
+}
